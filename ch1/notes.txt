@@ -2,3 +2,19 @@
 * A val(ue) does not permit re-assignment, a var(iable) does
 * It is an error to declare a value or variable without initializing it
 * The java.lang.String object is implicitly converted to a StringOps object
+* So, also (scala.runtime.)RichInt, RichDouble, RichChar embellish Int, Double, Char, etc.
+* (scala.math.)BigInt and BigDecimal are backed java.math.BigInteger and java.math.BigDecimal, but you can use them with usual mathematical operators
+* Use methods and not casts to convert between numeric types: 99.44.toInt is 99 and "99.44".toDouble is 99.44
+* a + b is shorthand for a.+(b)
+* You can define methods with just about any symbols for names
+* Scala has functions in additions to methods
+* To use a package that starts with scala., you can omit the scala. prefix
+* Scala methods without parameters often don't use parentheses, for e.g.: "Hello".distinct
+* Using the apply method of a companion object is a common Scala idiom for constructing objects (i.e., instances)
+
+(from the Exercises)
+* An explicit import math._ is required in the REPL to use mathematical functions (such as sqrt)
+* The 'res' variables in the REPL are vals
+* To compute 2 (to the power of) 1024:
+val x: BigInt = 2
+x pow 1024
