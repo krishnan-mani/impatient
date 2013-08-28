@@ -1,0 +1,4 @@
+* Use the scala interpreter to obtain a REPL
+* A val(ue) does not permit re-assignment, a var(iable) does
+* It is an error to declare a value or variable without initializing it
+* The java.lang.String object is implicitly converted to a StringOps object
